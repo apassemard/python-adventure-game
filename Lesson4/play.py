@@ -71,6 +71,20 @@ def get_player_choice(all_choices):
 ############################################################################
 def enter_battle(the_room):
      print (colors['red']+"TO DO: "+colors['end']+"This is the function where we manage combat")
+     #have to roll a hitroll (D20), if less than the hitroll you need you miss (11 for goblin)
+     # player has 8 hit point to start with
+     # player has 16 constitution, 8 widsom, 14 charisma
+     # player has 17 strength, 11 Dexterity, 9 intelligence
+     # Armor Class (AC) is 4 thanks to the armor (9 otherwise)
+     # class: Fighter
+     # To create a character, each attribute is 3D6
+     # Sword is 1D6 damage
+     # strength bonus +2 damage
+     # you are carrying a potion of healing (back to HP8)
+     # hit roll at AC=9 is 10 on a 1d20, at AC=0 is 19 on a 1d20
+     # ability adjustments 3 = -3, 4-5 = -2, 6-8 = -1, 9-12 = 0, 13-15 = +1, 16-17 = +2, 18 = +3
+     # adjustments are for damages on strength and hitroll on dexterity
+
 
 #Initialize where the player starts, which is 'intro'. We will create a variable
 #to store that information an retrieve it when we need it.

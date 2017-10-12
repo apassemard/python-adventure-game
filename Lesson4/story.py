@@ -152,9 +152,7 @@ dungeon = {
          { 'route_key' : 'run_away_room2', 'text' : 'Run for your life!?'  } ,
          { 'route_key' : 'attack_room2', 'text' : 'Fight!?'  },
      ],
-    'ennemies' : [
-         { 'type' : 'rust_monster', 'level' : '1' },
-     ],
+    'ennemies' : [ 'rust_monster' ],
     'next_step' : 'choices',
     'next_room' : '',
  },
@@ -199,11 +197,7 @@ dungeon = {
                 \nsome giant rats leap out from the corner to your right and attack!\
                 \nYou are suddenly in battle, and cannot escape.",
         'desc_visited' : "You are in the Rats room.",
-        'ennemies' : [
-              { 'type' : 'rat', 'class_key' : 'class1' },
-              { 'type' : 'rat', 'class_key' : 'class1' },
-              { 'type' : 'rat', 'class_key' : 'class1' },
-        ],
+        'ennemies' : [ 'rat', 'rat', 'rat' ],
         'next_step' : 'combat',
         'next_room' : 'room3',
     },
@@ -253,12 +247,7 @@ dungeon = {
              { 'route_key' : 'talk_to_goblins_room4', 'text' : 'Talk to the Goblins?'  } ,
              { 'route_key' : 'attack_goblins_room4', 'text' : 'Attack the Goblins by surprise?'  } ,
          ],
-         'ennemies' : [
-              { 'type' : 'goblin', 'class_key' : 'class1' },
-              { 'type' : 'goblin', 'class_key' : 'class1'},
-              { 'type' : 'goblin', 'class_key' : 'class1' },
-              { 'type' : 'goblin', 'class_key' : 'class2'},
-          ],
+         'ennemies' : [ 'goblin', 'goblin', 'goblin', 'goblin_captain' ],
          'next_step' : 'choices',
          'next_room' : '',
     },
@@ -362,7 +351,7 @@ dungeon = {
         'next_step' : 'choices',
         'next_room' : '',
         'choices' : [
-            { 'route_key' : 'attack_all_goblins_2_room4', 'text' : 'Attack the Goblins?'  },
+            { 'route_key' : 'attack_all_goblins_room4', 'text' : 'Attack the Goblins?'  },
             { 'route_key' : 'run_away_from_room4', 'text' : 'Run away as fast as you can?' },
         ],
     },
